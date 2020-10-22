@@ -1,13 +1,13 @@
 # Loganzabuurst
 
-Loganzabuurst is a music festival &amp; event theme.
+Loganzabuurst is a music festival &amp; event ~~theme~~ starter kit.
 
 ![Screenshot](/screenshots/screenshot-01.jpg?raw=true "Loganzabuurst")
 
-The theme is inspired by:
+The ~~theme~~ starter kit is heavily inspired by:
 
 -   [Under Bron](https://www.underbron.com/)
--   [Trädgården](https://www.tradgarden.com/).
+-   [Trädgården](https://www.tradgarden.com/)
 
 The name, Loganzabuurst, is a combination of:
 
@@ -16,6 +16,10 @@ The name, Loganzabuurst, is a combination of:
 -   [Lollapalooza](https://www.lollastockholm.com/)
 
 Feel free to use this theme as you please :)
+
+## TODO
+
+_I will add instructions later..._
 
 ## Videos
 
