@@ -1,6 +1,6 @@
 # Loganzabuurst
 
-Loganzabuurst is a music festival &amp; event ~~theme~~ starter kit.
+[Loganzabuurst](https://github.andrewisen.se/loganzabuurst/html/) is a music festival &amp; event ~~theme~~ starter kit. Here's a live [demo](https://github.andrewisen.se/loganzabuurst/html/).
 
 ![Screenshot](/screenshots/screenshot-01.jpg?raw=true "Loganzabuurst")
 
