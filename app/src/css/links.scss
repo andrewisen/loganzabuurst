@@ -1,0 +1,129 @@
+@use 'base';
+
+.loganzabuurst-links {
+    margin-bottom: -100px;
+    min-height: 600px;
+    padding: 50px;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: url("../img/cursor-default.png"), auto;
+
+    .loganzabuurst-links-container {
+        // position: absolute;
+        height: 100%;
+        box-sizing: border-box;
+        width: 100%;
+
+        /* <ul>  */
+        .loganzabuurst-unordered-list {
+            box-sizing: border-box;
+            margin: 0;
+
+            border: 0;
+
+            width: 40%;
+            height: 100%;
+            display: block;
+            z-index: 1;
+            top: 0px;
+            position: absolute;
+            left: 50%;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+            padding: 0px 50px 50px 0px;
+
+            /* <li>  */
+            .loganzabuurst-list-item {
+                position: relative;
+                top: 0px;
+                display: block;
+                width: 100%;
+                background: rgb(176, 250, 55) none repeat scroll 0% 0%;
+                height: 33.333%;
+
+                font-family: loganzabuurst-font;
+
+                line-height: 40px;
+
+                font-style: italic;
+                font-size: 50px;
+                line-height: 52px;
+
+                /* <a> (hyperlink) */
+                .loganzabuurst-list-item-link {
+                    display: block;
+                    height: 100%;
+                    color: rgb(0, 0, 255); //rgb(24, 24, 24);
+                    text-decoration: none;
+                    box-shadow: rgb(24, 24, 24) 0px 0px 0px 2px;
+
+                    /* <em< */
+                    .loganzabuurst-list-item-link-text {
+                        bottom: 30px;
+                        left: 20px;
+                        position: absolute;
+                    }
+
+                    &:hover {
+                        background-image: url("../img/static-noise.jpg");
+
+                        background-repeat: repeat;
+                        animation: static-noise 0.2s infinite;
+
+                        /* <em< */
+                        .loganzabuurst-list-item-link-text {
+                            color: rgba(255, 255, 255, 1);
+                            text-transform: uppercase;
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0) url("../img/links-bg.jpg") no-repeat
+                scroll center center / cover;
+            z-index: 0;
+        }
+    }
+}
+
+@keyframes static-noise {
+    0% {
+        background-position-y: 0%;
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-y: -50%;
+        background-position-x: 50%;
+    }
+
+    100% {
+        background-position-y: 100%;
+        background-position-y: 100%;
+    }
+}
+
+@media (max-width: base.$min-width) {
+    .loganzabuurst-unordered-list {
+        left: 0px !important;
+        width: 100% !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+}

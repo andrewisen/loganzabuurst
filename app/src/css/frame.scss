@@ -1,0 +1,166 @@
+/*
+    The entire website is surrounded by a FRAME.
+    More specific; a top, bottom, left & right FRAME.
+
+    The BORDER is the black line at the end of the frame - or outside the frame.
+*/
+
+@use 'base';
+
+/* Generic mixin for the border */
+@mixin loganzabuurst-frame-border($left, $right) {
+    left: $left;
+    right: $right;
+
+    content: "";
+    position: absolute;
+    display: block;
+    width: auto;
+    border-top: base.$border-width solid base.$border-color;
+    height: 0px;
+}
+/* Generic mixin for the side (left and right of the border) */
+@mixin loganzabuurst-frame-border-side() {
+    width: 0px !important;
+    height: auto !important;
+
+    top: base.$frame-heigth;
+    bottom: base.$frame-heigth;
+    border-color: currentcolor base.$border-color currentcolor currentcolor;
+    border-style: none solid none none;
+    border-width: 0px base.$border-width 0px 0px;
+}
+
+/* The FRAME around the entire page  */
+.loganzabuurst-frame {
+    position: fixed;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    z-index: 90;
+    white-space: pre;
+    font-size: 35px;
+    line-height: 44px;
+    letter-spacing: 0px;
+}
+
+/* The frame at the top  */
+.loganzabuurst-frame-top {
+    width: 100%;
+    height: base.$frame-heigth;
+    border: 0px;
+    z-index: 92;
+
+    &:before {
+        top: base.$frame-heigth;
+        @include loganzabuurst-frame-border(0px, 0px);
+    }
+}
+
+@media (min-width: base.$min-width) {
+    .loganzabuurst-frame-top {
+        &:before {
+            @include loganzabuurst-frame-border(
+                base.$frame-width,
+                base.$frame-width
+            );
+        }
+    }
+
+    /* The frame to the left  */
+    .loganzabuurst-frame-left {
+        width: base.$frame-width;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        &:before {
+            @include loganzabuurst-frame-border-side();
+            @include loganzabuurst-frame-border(
+                base.$frame-width,
+                base.$frame-width
+            );
+        }
+        strong {
+            transform: rotate(-90deg);
+        }
+    }
+
+    /* The frame to the right  */
+    .loganzabuurst-frame-right {
+        width: base.$frame-width;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        &:before {
+            @include loganzabuurst-frame-border-side();
+            @include loganzabuurst-frame-border(0, base.$frame-width);
+        }
+        strong {
+            transform: rotate(90deg);
+        }
+    }
+
+    /* The frame at the bottom  */
+
+    .loganzabuurst-frame-bottom {
+        width: 100%;
+        height: base.$frame-heigth;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        border: 0px;
+        &:before {
+            bottom: base.$frame-heigth;
+            @include loganzabuurst-frame-border(
+                base.$frame-width,
+                base.$frame-width
+            );
+        }
+    }
+}
+
+.loganzabuurst-frame-logo {
+    /* Hide the logo, but keep it SEO-friendly */
+    font-size: 0px;
+
+    /* Generic */
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: base.$frame-heigth;
+
+    /* Background */
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: left;
+    background-position-y: 5px;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-image: url("../svg/logo-header.svg");
+    background-size: 247px 35px;
+    background-origin: border-box;
+    background-clip: border-box;
+
+    /* Animation */
+    animation-name: loganzabuurst-dirty-marquee;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+/* Very simple and dirty CSS trick */
+@keyframes loganzabuurst-dirty-marquee {
+    100% {
+        background-position-x: -400px;
+    }
+}

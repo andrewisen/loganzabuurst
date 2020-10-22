@@ -1,0 +1,29 @@
+@use 'base';
+
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.loganzabuurst-app {
+    float: left;
+    cursor: -webkit-image-set(url(https://static.mecca.com.au/assets/meccaland-2019/ui/cursor-default-1551132507.png) 1x, url(https://static.mecca.com.au/assets/meccaland-2019/ui/cursor-default-1551132507@2x.png) 2x), auto;
+}
+
+section ul li a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
