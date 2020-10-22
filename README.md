@@ -37,6 +37,10 @@ Check out [Anna's website](http://annashvets.com/)
 Video by [Anna Shvets](https://www.pexels.com/@shvetsa) from [Pexels](https://www.pexels.com/).
 Check out [Anna's website](http://annashvets.com/)
 
+## After Effects
+
+The AE Project File can be found [here](https://www.dropbox.com/s/x0abzm1r75rua64/loganzabuurst-ae-project.zip?dl=1). Do what ever you want with it.
+
 ## Known issues
 
 -   Safari video not playing on localhost
