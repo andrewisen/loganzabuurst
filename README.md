@@ -1,10 +1,10 @@
 # Loganzabuurst
 
-[Loganzabuurst](https://github.andrewisen.se/loganzabuurst/html/) is a music festival &amp; event ~~theme~~ starter kit. Here's a live [demo](https://github.andrewisen.se/loganzabuurst/html/).
+[Loganzabuurst](https://github.andrewisen.se/loganzabuurst/html/) is a music festival &amp; event ~~theme~~ **starter kit**. Here's a live [demo](https://github.andrewisen.se/loganzabuurst/html/).
 
 ![Screenshot](/screenshots/screenshot-01.jpg?raw=true "Loganzabuurst")
 
-The ~~theme~~ starter kit is heavily inspired by:
+The ~~theme~~ **starter kit** is heavily inspired by:
 
 -   [Under Bron](https://www.underbron.com/)
 -   [Trädgården](https://www.tradgarden.com/)
